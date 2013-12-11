@@ -6,28 +6,115 @@
 #define GRAV_KONST 9.81
 using namespace std;
 
-double deltaE(double R, double v, double M)
+       
+int main()
 {
-    double vysledok, zatvorka;
-    double c1, c2, c3, c4;
+    double polomer, vyska, hmotnost;
+    double vysledok;
     
-    c3= v/4.0;
+    printf("Zadaj polomer: ");
+    scanf("%lf", &polomer);
+    printf("Zadaj vysku: ");
+    scanf("%lf", &vyska);
+    printf("Zadaj hmotnost: ");
+    scanf("%lf", &hmotnost);
     
-    c1= sqrt( c3*c3 + R*R );
-    c4= sqrt(R*R + v*v);
-    c2=0.75*v*(R/c4);
+    vysledok = deltaE( polomer, vyska, hmotnost);
     
-    zatvorka= c1 - c2 ;
+    printf("polomer:%.3lf\n", polomer);
+    printf("vyska:%.3lf\n", vyska);
+    printf("hmotnost:%.3lf\n", hmotnost);
     
     
-    vysledok = M * GRAV_KONST * zatvorka;
+    printf("%lf\n", vysledok);
     
-     return vysledok;  
-       
-       
-       
-       }
-       
+    system("PAUSE");
+    return 0;
+}
+
+
+
+int main()
+{
+    double polomer, vyska, hmotnost;
+    double vysledok;
+    
+    printf("Zadaj polomer: ");
+    scanf("%lf", &polomer);
+    printf("Zadaj vysku: ");
+    scanf("%lf", &vyska);
+    printf("Zadaj hmotnost: ");
+    scanf("%lf", &hmotnost);
+    
+    vysledok = deltaE( polomer, vyska, hmotnost);
+    
+    printf("polomer:%.3lf\n", polomer);
+    printf("vyska:%.3lf\n", vyska);
+    printf("hmotnost:%.3lf\n", hmotnost);
+    
+    
+    printf("%lf\n", vysledok);
+    
+    system("PAUSE");
+    return 0;
+}
+
+
+
+int main()
+{
+    double polomer, vyska, hmotnost;
+    double vysledok;
+    
+    printf("Zadaj polomer: ");
+    scanf("%lf", &polomer);
+    printf("Zadaj vysku: ");
+    scanf("%lf", &vyska);
+    printf("Zadaj hmotnost: ");
+    scanf("%lf", &hmotnost);
+    
+    vysledok = deltaE( polomer, vyska, hmotnost);
+    
+    printf("polomer:%.3lf\n", polomer);
+    printf("vyska:%.3lf\n", vyska);
+    printf("hmotnost:%.3lf\n", hmotnost);
+    
+    
+    printf("%lf\n", vysledok);
+    
+    system("PAUSE");
+    return 0;
+}
+
+
+
+int main()
+{
+    double polomer, vyska, hmotnost;
+    double vysledok;
+    
+    printf("Zadaj polomer: ");
+    scanf("%lf", &polomer);
+    printf("Zadaj vysku: ");
+    scanf("%lf", &vyska);
+    printf("Zadaj hmotnost: ");
+    scanf("%lf", &hmotnost);
+    
+    vysledok = deltaE( polomer, vyska, hmotnost);
+    
+    printf("polomer:%.3lf\n", polomer);
+    printf("vyska:%.3lf\n", vyska);
+    printf("hmotnost:%.3lf\n", hmotnost);
+    
+    
+    printf("%lf\n", vysledok);
+    
+    system("PAUSE");
+    return 0;
+}
+
+
+
 int main()
 {
     double polomer, vyska, hmotnost;
