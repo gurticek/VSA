@@ -4,25 +4,7 @@
 #include<math.h>
 
 #define GRAV_KONST 9.81
-using namespace std;
 
-double deltaE(double R, double v, double M)
-{
-    double vysledok, zatvorka;
-    double c1, c2, c3, c4;
-    
-    c3= v/4.0;
-    
-    c1= sqrt( c3*c3 + R*R );
-    c4= sqrt(R*R + v*v);
-    c2=0.75*v*(R/c4);
-    
-    zatvorka= c1 - c2 ;
-    
-    
-    vysledok = M * GRAV_KONST * zatvorka;
-    
-     return vysledok;  
        
        
        
